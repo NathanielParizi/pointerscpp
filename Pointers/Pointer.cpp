@@ -50,6 +50,46 @@ int main() {
 	manipulate2(&myInt);
 	cout << "myInt: " << myInt << endl;
 
+
+
+	//casting to different primitive data types
+	double val1 = (double) 7/2;
+
+	cout << val1 << endl;
+
+	int value2 = (int) 7.3;
+	cout << value2 << endl;
+
+	int value3  = 9;
+	value3 += 1;
+	cout << value3 << endl;
+
+	int value4 = 10;
+	value4 /= 5;
+	cout << value4 << endl;
+
+	int modval= 1042 % 10;   //modulo
+	cout << modval << endl;
+
+	//operator precedence
+
+	double equation = 5.3 / 4 + 2 * 6;
+	cout << equation << endl;
+	equation = (5.3/4)+(2*6);
+		cout << equation << endl;
+
+		cout << "How many second do you want to calculate into minutes, hours, days?" << endl;
+		int seconds;
+		cin >> seconds;
+		double minutes = seconds /60;
+		double hours = minutes/60;
+		double days = hours / 24;
+		cout << "********************" << endl;
+		cout << "minutes: " << minutes << endl;
+		cout << "hours: " << hours << endl;
+		cout << "days: " << days << endl;
+
+
 	return 0;
 }
 
